@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    
+    @font-face {
+        font-family: 'Pop-italic';
+        src: url(../assets/fonts/poppins-italic-webfont.woff2) format('woff2'),
+        url(../assets/fonts/poppins-italic-webfont.woff) format('woff');
+        font-weight:400;
+        font-style: italic;
+    }
+
+    @font-face {
+        font-family: 'Pop-Bold';
+        src: url(../assets/fonts/poppins-bold-webfont.woff2) format('woff2'),
+        url(../assets/fonts/poppins-bold-webfont.woff) format('woff');
+        font-weight:700;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Pop-extraBold-italic';
+        src: url(../assets/fonts/poppins-extrabolditalic-webfont.woff2) format('woff2'),
+        url(../assets/fonts/poppins-extrabolditalic-webfont.woff) format('woff');
+        font-weight:800;
+        font-style: italic;
+    }
+    
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <link rel="stylesheet" href="./dist/output.css">
+
+    <script src="./app/js/main.js" defer></script>
+
+  </head>
+  <body class="min-h-screen grid place-items-center relative bg-Light_grey px-3">
+    
+    <main class="bg-White py-12 px-5 rounded-t-2xl rounded-bl-2xl rounded-br-[6rem] md:w-[550px] md:pe-[4.5rem] md:ps-8 transition-all delay-200 ease-linear">
+      <form id="form" action="/" method="post" class="flex flex-wrap justify-between gap-4 mb-14 relative border-b-2 border-Light_grey pb-14 md:mb-10 md:pb-6 md:gap-0 md:pe-16">
+        <fieldset>
+          <label for="day" class="block text-xs font-Pop_Bold text-Smokey_grey mb-1 tracking-widest">DAY</label>
+          <input type="text" name="day" id="day" class="w-[5.5rem] font-Pop_Bold text-lg border-2 border-Light_grey py-[0.5rem] ps-3 rounded-md md:w-[7rem] outline-none focus:border-3 focus:border-Purple" placeholder="DD">
+        </fieldset>
+
+        <fieldset>
+          <label for="month" class="block text-xs font-Pop_Bold text-Smokey_grey mb-1 tracking-widest">MONTH</label>
+          <input type="text" name="month" id="month" class="w-[5.5rem] font-Pop_Bold text-lg border-2 border-Light_grey py-[0.5rem] ps-3 rounded-md md:w-[7rem] outline-none focus:border-3 focus:border-Purple" placeholder="MM">
+        </fieldset>
+
+        <fieldset>
+          <label for="year" class="block text-xs font-Pop_Bold text-Smokey_grey mb-1 tracking-widest">YEAR</label>
+          <input type="text" name="year" id="year" class="w-[5.5rem] font-Pop_Bold text-lg border-2 border-Light_grey py-[0.5rem] ps-3 rounded-md md:w-[7rem] outline-none focus:border-3 focus:border-Purple" placeholder="YYYY">
+        </fieldset>
+
+        <input id="submit" type="submit" value="" class="absolute left-[50%] translate-x-[-50%] top-[6.3rem] md:left-[100%] md:top-[4rem] bg-Purple bg-arrow-icon bg-no-repeat bg-center bg-[length:1.4rem_1.5rem] md:bg-[length:2.8rem_1.6rem] rounded-full p-4 px-[1.8rem] active:scale-75 active:bg-Off_black hover:bg-Off_black cursor-pointer transition-transform delay-75 ease-linear">
+      </form>
+
+      <article>
+        <h1 class="text-5xl mb-3 font-Pop_extraI flex gap-2 md:gap-0"><span class="text-Purple md:tracking-[0.19em]" data-years>--</span>years</h1>
+      </article>
+      <article>
+        <h1 class="text-5xl mb-3 font-Pop_extraI flex gap-2 md:gap-0"><span class="text-Purple md:tracking-[0.19em]" data-months>--</span>months</h1>
+      </article>
+      <article>
+        <h1 class="text-5xl mb-3 font-Pop_extraI flex gap-2 md:gap-0"><span class="text-Purple md:tracking-[0.19em]" data-days>--</span>days</h1>
+      </article>   
+
+    </main>
+
+    <footer class="absolute bottom-1">
+      <p class="text-xs md:text-sm">Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        class="text-emerald-400 underline font-bold">Frontend Mentor</a
+      >. Coded by <a href="#" class="text-red-400 font-bold underline">Dinesh Sake</a>.</p>
+    </footer>
+
+  </body>
+</html>
