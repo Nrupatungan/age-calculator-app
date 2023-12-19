@@ -88,7 +88,7 @@ function show_alert(){
 }
 
 function calculateAge(birthDate) {
-    // const now = new Date();
+    const now = new Date();
     let years = date('year') - birthDate.getFullYear();
     let months = date('month') - birthDate.getMonth();
     let days = date('day') - birthDate.getDate();
